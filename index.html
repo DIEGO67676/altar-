@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altar de Día de Muertos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #1b1026;
+            color: #fff3dc;
+        }
+
+        header {
+            background: linear-gradient(rgba(20, 8, 25, .65),
+                        rgba(20, 8, 25, .85)),
+                        url("https://images.unsplash.com/photo-1509622905150-fa66d3905f0a");
+            background-size: cover;
+            background-position: center;
+            min-height: 480px;
+            text-align: center;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav {
+            background-color: #321a37;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #ffcc70;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff7b35;
+        }
+
+        header h1 {
+            font-size: 55px;
+            color: #ff9d35;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        header p {
+            font-size: 21px;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .boton {
+            display: inline-block;
+            margin: 25px auto 0;
+            background-color: #e87525;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .boton:hover {
+            background-color: #ffb347;
+            color: #28132d;
+        }
+
+        section {
+            padding: 65px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #ff9d35;
+            font-size: 34px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .historia {
+            background-color: #29182e;
+        }
+
+        .elementos {
+            background-color: #1b1026;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .tarjeta {
+            background-color: #392342;
+            border: 1px solid #a85d36;
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform .3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .tarjeta h3 {
+            color: #ffb347;
+            padding: 15px 10px 5px;
+            font-size: 22px;
+        }
+
+        .tarjeta p {
+            font-size: 15px;
+            padding: 10px 18px 22px;
+        }
+
+        .niveles {
+            background-color: #321a37;
+        }
+
+        .tradicion {
+            background-color: #29182e;
+        }
+
+        footer {
+            background-color: #130b1a;
+            text-align: center;
+            padding: 30px;
+            color: #ffcc70;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 38px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#elementos">Elementos</a>
+        <a href="#niveles">Niveles</a>
+        <a href="#tradicion">Tradición</a>
+    </nav>
+
+    <header id="inicio">
+        <h1>🌼 Altar de Día de Muertos 🌼</h1>
+        <p>
+            Una tradición llena de amor, recuerdos y colores.
+            Celebramos la vida de quienes siempre vivirán
+            en nuestros corazones.
+        </p>
+        <a href="#historia" class="boton">Descubre la tradición</a>
+    </header>
+
+    <section class="historia" id="historia">
+        <h2>✨ ¿Qué es el Día de Muertos?</h2>
+        <p>
+            El Día de Muertos es una de las tradiciones más
+            representativas de México. Se celebra cada 1 y 2
+            de noviembre para recordar y honrar a nuestros
+            seres queridos que han fallecido.
+            Las familias preparan altares con fotografías,
+            flores, veladoras, comida y objetos especiales
+            para recibir simbólicamente a sus difuntos.
+            Es una celebración llena de cultura, amor y memoria.
+        </p>
+    </section>
+
+    <section class="elementos" id="elementos">
+        <h2>🕯️ Elementos del altar</h2>
+        <p>
+            Cada objeto tiene un significado especial y ayuda
+            a mantener viva esta hermosa tradición.
+        </p>
+
+        <div class="contenedor">
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1508615070457-7baeba4003ab?w=600"
+                alt="Flores naranjas">
+                <h3>🌼 Cempasúchil</h3>
+                <p>
+                    Su color y aroma representan la luz que
+                    guía a las almas hacia el altar.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=600"
+                alt="Velas encendidas">
+                <h3>🕯️ Veladoras</h3>
+                <p>
+                    Representan la esperanza y la luz que
+                    ilumina el camino de los difuntos.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600"
+                alt="Pan tradicional">
+                <h3>🍞 Pan de muerto</h3>
+                <p>
+                    Es uno de los alimentos tradicionales
+                    que se ofrecen en el altar.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=600"
+                alt="Decoraciones coloridas">
+                <h3>🎊 Papel picado</h3>
+                <p>
+                    Representa el aire y aporta alegría
+                    y color a la celebración.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=600"
+                alt="Fotografía decorativa">
+                <h3>📸 Fotografías</h3>
+                <p>
+                    Nos permiten recordar y honrar a las
+                    personas que ya no están con nosotros.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="https://images.unsplash.com/photo-1515003197210-e0cd7184f8b5?w=600"
+                alt="Comida tradicional">
+                <h3>🍊 Comida y agua</h3>
+                <p>
+                    Se colocan para ofrecer a los difuntos
+                    sus alimentos y bebidas favoritas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="niveles" id="niveles">
+        <h2>🏵️ Los niveles del altar</h2>
+        <p>
+            Los altares pueden tener diferentes cantidades
+            de niveles. Uno de los más conocidos es el altar
+            de siete niveles, que representa las etapas
+            del camino espiritual hacia el descanso eterno.
+            También existen altares de dos y tres niveles,
+            dependiendo de las costumbres de cada familia
+            y región.
+        </p>
+    </section>
+
+    <section class="tradicion" id="tradicion">
+        <h2>❤️ Una tradición que nunca muere</h2>
+        <p>
+            El Día de Muertos nos enseña que las personas
+            que amamos nunca desaparecen mientras vivan
+            en nuestros recuerdos. Cada flor, cada vela
+            y cada fotografía representa el cariño que
+            seguimos teniendo por ellas.
+            ¡Mantengamos viva esta hermosa tradición mexicana!
+        </p>
+        <a href="#inicio" class="boton">Volver al inicio ↑</a>
+    </section>
+
+    <footer>
+        <p>🌼 Día de Muertos - Una tradición mexicana 🌼</p>
+        <p>Hecho con amor y orgullo por nuestras raíces.</p>
+        <p>© 2026 | hecho por diego</p>
+    </footer>
+
+</body>
+</html>
